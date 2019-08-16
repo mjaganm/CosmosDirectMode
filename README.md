@@ -39,8 +39,12 @@ example:
 
 ## Usage Instructions
 
-Test the service is up and running: http://localhost:8080/isalive
-Retrieve a document using DirectMode: http://localhost:8080/{DatabaseName}/{CollectionName}/getdocument?id={id-value}
+Test the service is up and running: 
+ - http://localhost:8080/isalive
+ 
+Retrieve a document using DirectMode: 
+ - http://localhost:8080/{DatabaseName}/{CollectionName}/getdocument?id={id-value}
+ 
 ex: http://localhost:8080/device/activitylog/getdocument?id=59651931-cd31-40a9-a912-d9012518cb92
 
 

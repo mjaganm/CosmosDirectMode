@@ -3,11 +3,15 @@
 Provides a side car implementation for DirectMode. This could be used as a local gateway to achieve high perf.
 
 
+
 ## Build Instructions
 
 > set MAVEN_OPTS=-Xss10M
 
 > mvn clean package
+
+
+## Execution Instructions
 
 > java -jar CosmosDBDirectMode-1.0-SNAPSHOT.jar com.microsoft.CosmosDBDirectMode.CosmosDBDirectMode -e Cosmos-Account-Endpoint-Url -k Account-Key
 

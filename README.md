@@ -2,22 +2,50 @@
 
 Provides a side car implementation for Cosmos DB DirectMode for applications running in C++/Node.js or others where Cosmos SDK does not support Direct Mode. This could be used as a local gateway to achieve high perf reads.
 
+## Maven
 
-
-## Build Instructions
+### Build Instructions
 
 > set MAVEN_OPTS=-Xss10M
 
 > mvn clean package
 
 
-## Execution Instructions
+### Execution Instructions
 
 > java -jar DirectModeSideCar-1.0-SNAPSHOT.jar com.microsoft.azure.cosmos.DirectModeSideCar.CosmosDBDirectMode -e Cosmos-Account-Endpoint-Url -k Account-Key
 
 example:
 
 > java -jar DirectModeSideCar-1.0-SNAPSHOT.jar com.microsoft.azure.cosmos.DirectModeSideCar.CosmosDBDirectMode -e https://myAccount.documents.azure.com:443/ -k abcedtAUJq0SyX6VeCCTuB26eyeMAVxnUN4xbjsnWFehcVuEXndX4GkAzOt4enaqUq0rlrA4UTLVvgGvBp0Gab==
+
+
+## Intellij
+
+### Build and Execute Instructions
+
+1. Tab "Build" => "Rebuild Project"
+
+2. Tab "Run" => "Edit Configurations" => Click on "+" => Select "Application" and Add Name: DirectModeSidecar
+
+3. Add Main Class: com.microsoft.azure.cosmos.DirectModeSideCar.CosmosDBDirectMode
+
+4. Add Program Arguments: com.microsoft.azure.cosmos.DirectModeSideCar.CosmosDBDirectMode -e https://myAccount.documents.azure.com:443/ -k abcedtAUJq0SyX6VeCCTuB26eyeMAVxnUN4xbjsnWFehcVuEXndX4GkAzOt4enaqUq0rlrA4UTLVvgGvBp0Gab==
+
+5. Click Apply
+
+6. Tab "Run" => "Run DirectModeSidecar"
+
+
+
+### Execution Instructions
+
+> java -jar DirectModeSideCar-1.0-SNAPSHOT.jar com.microsoft.azure.cosmos.DirectModeSideCar.CosmosDBDirectMode -e Cosmos-Account-Endpoint-Url -k Account-Key
+
+example:
+
+> java -jar DirectModeSideCar-1.0-SNAPSHOT.jar com.microsoft.azure.cosmos.DirectModeSideCar.CosmosDBDirectMode -e https://myAccount.documents.azure.com:443/ -k abcedtAUJq0SyX6VeCCTuB26eyeMAVxnUN4xbjsnWFehcVuEXndX4GkAzOt4enaqUq0rlrA4UTLVvgGvBp0Gab==
+
 
 
 ## Usage Instructions

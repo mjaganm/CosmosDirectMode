@@ -1,7 +1,6 @@
-package com.microsoft.CosmosDBDirectMode;
+package com.microsoft.azure.cosmos.DirectModeSideCar;
 
-public class IsAlive
-{
+public class IsAlive {
 
     private final long id;
     private final String content;

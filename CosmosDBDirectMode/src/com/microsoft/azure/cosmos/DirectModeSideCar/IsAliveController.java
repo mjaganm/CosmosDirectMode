@@ -1,4 +1,4 @@
-package com.microsoft.CosmosDBDirectMode;
+package com.microsoft.azure.cosmos.DirectModeSideCar;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

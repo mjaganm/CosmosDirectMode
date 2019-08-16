@@ -1,4 +1,4 @@
-package com.microsoft.CosmosDBDirectMode;
+package com.microsoft.azure.cosmos.DirectModeSideCar;
 
 import com.microsoft.azure.documentdb.Document;
 import com.microsoft.azure.documentdb.DocumentClient;
@@ -12,8 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class DocumentClientController
-{
+public class DocumentClientController {
     @Autowired
     private DocumentClient client;
 
@@ -21,14 +20,11 @@ public class DocumentClientController
     public String getdocument(
             @PathVariable String DatabaseName,
             @PathVariable String CollectionName,
-            @RequestParam(value="id") String id)
-    {
-        if (client == null)
-        {
+            @RequestParam(value="id") String id) {
+        if (client == null) {
             return null;
         }
-        else
-        {
+        else {
             String collLink = "/dbs/" + DatabaseName + "/colls/" + CollectionName;
 
             List<Document> documentList = client.queryDocuments(
@@ -37,12 +33,10 @@ public class DocumentClientController
                     .getQueryIterable()
                     .toList();
 
-            if (documentList.size() > 0)
-            {
+            if (documentList.size() > 0) {
                 return documentList.get(0).toJson();
             }
-            else
-            {
+            else {
                 return "Error: Document not found";
             }
         }

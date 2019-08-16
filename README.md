@@ -8,17 +8,17 @@ Provides a side car implementation for Cosmos DB DirectMode for applications run
 
 ### Build
 
-> set MAVEN_OPTS=-Xss10M
+    set MAVEN_OPTS=-Xss10M
 
-> mvn clean package
+    mvn clean package
 
 ### Execution
 
-> java -jar DirectModeSideCar-1.0-SNAPSHOT.jar com.microsoft.azure.cosmos.DirectModeSideCar.CosmosDBDirectMode -e Cosmos-Account-Endpoint-Url -k Account-Key
+    java -jar DirectModeSideCar-1.0-SNAPSHOT.jar com.microsoft.azure.cosmos.DirectModeSideCar.CosmosDBDirectMode -e Cosmos-Account-Endpoint-Url -k Account-Key
 
 example:
 
-> java -jar DirectModeSideCar-1.0-SNAPSHOT.jar com.microsoft.azure.cosmos.DirectModeSideCar.CosmosDBDirectMode -e https://myAccount.documents.azure.com:443/ -k abcedtAUJq0SyX6VeCCTuB26eyeMAVxnUN4xbjsnWFehcVuEXndX4GkAzOt4enaqUq0rlrA4UTLVvgGvBp0Gab==
+    java -jar DirectModeSideCar-1.0-SNAPSHOT.jar com.microsoft.azure.cosmos.DirectModeSideCar.CosmosDBDirectMode -e https://myAccount.documents.azure.com:443/ -k abcedtAUJq0SyX6VeCCTuB26eyeMAVxnUN4xbjsnWFehcVuEXndX4GkAzOt4enaqUq0rlrA4UTLVvgGvBp0Gab==
 
 
 
@@ -43,12 +43,12 @@ example:
 ## Usage Instructions
 
 Test the service is up and running: 
- - http://localhost:8080/isalive
+    http://localhost:8080/isalive
  
 Retrieve a document using DirectMode: 
- - http://localhost:8080/{DatabaseName}/{CollectionName}/getdocument?id={id-value}
+    http://localhost:8080/{DatabaseName}/{CollectionName}/getdocument?id={id-value}
  
-ex: http://localhost:8080/device/activitylog/getdocument?id=59651931-cd31-40a9-a912-d9012518cb92
+    ex: http://localhost:8080/device/activitylog/getdocument?id=59651931-cd31-40a9-a912-d9012518cb92
 
 
 

@@ -1,6 +1,6 @@
 # CosmosDirectMode
 
-Provides a side car implementation for DirectMode. This could be used as a local gateway to achieve high perf.
+Provides a side car implementation for Cosmos DB DirectMode for applications running in C++/Node.js or others where Cosmos SDK does not support Direct Mode. This could be used as a local gateway to achieve high perf reads.
 
 
 
@@ -13,10 +13,11 @@ Provides a side car implementation for DirectMode. This could be used as a local
 
 ## Execution Instructions
 
-> java -jar CosmosDBDirectMode-1.0-SNAPSHOT.jar com.microsoft.CosmosDBDirectMode.CosmosDBDirectMode -e Cosmos-Account-Endpoint-Url -k Account-Key
+> java -jar DirectModeSideCar-1.0-SNAPSHOT.jar com.microsoft.azure.cosmos.DirectModeSideCar.CosmosDBDirectMode -e Cosmos-Account-Endpoint-Url -k Account-Key
 
 example:
-> java -jar CosmosDBDirectMode-1.0-SNAPSHOT.jar com.microsoft.CosmosDBDirectMode.CosmosDBDirectMode -e https://myAccount.documents.azure.com:443/ -k abcedtAUJq0SyX6VeCCTuB26eyeMAVxnUN4xbjsnWFehcVuEXndX4GkAzOt4enaqUq0rlrA4UTLVvgGvBp0Gab==
+
+> java -jar DirectModeSideCar-1.0-SNAPSHOT.jar com.microsoft.azure.cosmos.DirectModeSideCar.CosmosDBDirectMode -e https://myAccount.documents.azure.com:443/ -k abcedtAUJq0SyX6VeCCTuB26eyeMAVxnUN4xbjsnWFehcVuEXndX4GkAzOt4enaqUq0rlrA4UTLVvgGvBp0Gab==
 
 
 ## Usage Instructions

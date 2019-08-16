@@ -32,6 +32,6 @@ ex: http://localhost:8080/device/activitylog/getdocument?id=59651931-cd31-40a9-a
 
 Ex: http://localhost:8080/isalive  => https://localhost:8080/isalive and failure
 
-Mitigation: Use "Edge" or other browser that does not have this default behavior for testing
+Mitigation: Use "Edge" or other browser that does not have this default behavior for testing. Applications that are using http protocol are able to successfully connect.
 
 

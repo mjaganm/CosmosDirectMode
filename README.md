@@ -37,17 +37,6 @@ example:
 6. Tab "Run" => "Run DirectModeSidecar"
 
 
-
-### Execution Instructions
-
-> java -jar DirectModeSideCar-1.0-SNAPSHOT.jar com.microsoft.azure.cosmos.DirectModeSideCar.CosmosDBDirectMode -e Cosmos-Account-Endpoint-Url -k Account-Key
-
-example:
-
-> java -jar DirectModeSideCar-1.0-SNAPSHOT.jar com.microsoft.azure.cosmos.DirectModeSideCar.CosmosDBDirectMode -e https://myAccount.documents.azure.com:443/ -k abcedtAUJq0SyX6VeCCTuB26eyeMAVxnUN4xbjsnWFehcVuEXndX4GkAzOt4enaqUq0rlrA4UTLVvgGvBp0Gab==
-
-
-
 ## Usage Instructions
 
 Test the service is up and running: http://localhost:8080/isalive

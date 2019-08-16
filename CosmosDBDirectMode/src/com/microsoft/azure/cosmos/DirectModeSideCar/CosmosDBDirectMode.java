@@ -1,4 +1,4 @@
-package com.microsoft.azure.cosmos.DirectModeSideCar;
+package com.microsoft.CosmosDBDirectMode;
 
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
@@ -16,7 +16,8 @@ import java.util.Collection;
 import java.util.List;
 
 
-public class CosmosDBDirectMode {
+public class CosmosDBDirectMode
+{
     public final JCommander jCommander;
     @Parameter
     private List<String> parameters = new ArrayList<>();
@@ -70,9 +71,11 @@ public class CosmosDBDirectMode {
         policy.setMaxPoolSize(2000);
 
         client = new DocumentClient(accountUrl, accountKey, policy, ConsistencyLevel.Eventual);
+
     }
 
-    public static void main(String[] args) throws DocumentClientException {
+    public static void main(String[] args) throws DocumentClientException
+    {
         // Initialize CosmosDBDirectMode
         CosmosDBDirectMode server = new CosmosDBDirectMode(args);
 
